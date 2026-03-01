@@ -36,4 +36,25 @@ func main() {
 
 	nz = append(nz, ny...) // ... is like expanding the ny as append(nz, 10, 20, 30, 40, 50)
 
+	fmt.Println("nz: ", nz)
+
+	// capacity method
+
+	var nxx []int
+	fmt.Printf("len of nxx: %d, cap of nxx: %d\n", len(nxx), cap(nxx))
+
+	nxx = append(nxx, 10)
+	fmt.Printf("len of nxx: %d, cap of nxx: %d\n", len(nxx), cap(nxx))
+
+	nxx = append(nxx, 20)
+	fmt.Printf("len of nxx: %d, cap of nxx: %d\n", len(nxx), cap(nxx))
+
+	nxx = append(nxx, 30)
+	fmt.Printf("len of nxx: %d, cap of nxx: %d\n", len(nxx), cap(nxx))
+
+	nxx = append(nxx, 40)
+	fmt.Printf("len of nxx: %d, cap of nxx: %d\n", len(nxx), cap(nxx))
+
+	nxx = append(nxx, 50)
+	fmt.Printf("len of nxx: %d, cap of nxx: %d\n", len(nxx), cap(nxx))
 }
