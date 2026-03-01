@@ -18,5 +18,9 @@ func main() {
 	fmt.Println("rune s: ", s)
 
 	// converting strings into a runes of character
+	var welcome_msg_runes []rune = []rune(welcome_msg)
+	fmt.Println("welcome_msg_runes: ", welcome_msg_runes) // go return a slice of bytes, go does not represent array of string as unicode.
 
+	// to get the string, you have to use
+	fmt.Println("second welcome_msg character: ", string(welcome_msg_runes[1]))
 }
