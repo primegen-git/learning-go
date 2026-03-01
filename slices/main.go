@@ -38,7 +38,7 @@ func main() {
 
 	fmt.Println("nz: ", nz)
 
-	// capacity method
+	// observering the change in capacity as len increases.
 
 	var nxx []int
 	fmt.Printf("len of nxx: %d, cap of nxx: %d\n", len(nxx), cap(nxx))
@@ -57,4 +57,19 @@ func main() {
 
 	nxx = append(nxx, 50)
 	fmt.Printf("len of nxx: %d, cap of nxx: %d\n", len(nxx), cap(nxx))
+
+	// slicing in slices
+
+	nyy := []int{10, 20, 30}
+	nzz := nyy[1:]
+
+	fmt.Println("nyy: ", nyy)
+	fmt.Println("nzz: ", nzz)
+
+	// showing that slicing point to same memory location
+	nzz[0] = 15
+
+	fmt.Println("nyy: ", nyy)
+	fmt.Println("nzz: ", nzz)
+
 }
