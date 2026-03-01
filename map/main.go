@@ -37,6 +37,8 @@ func main() {
 		"uzumaki": 0,
 	}
 
+	fmt.Println("m: ", m)
+
 	value, ok := m["naruto"]
 	fmt.Printf("value: %d, ok: %t\n", value, ok)
 
@@ -45,5 +47,9 @@ func main() {
 
 	value, ok = m["sasuke"]
 	fmt.Printf("value: %d, ok: %t\n", value, ok)
+
+	//delete from a map with delete method()
+	delete(m, "uzumaki")
+	fmt.Println("m: ", m)
 
 }
