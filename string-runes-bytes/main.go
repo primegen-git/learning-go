@@ -23,4 +23,27 @@ func main() {
 
 	// to get the string, you have to use
 	fmt.Println("second welcome_msg character: ", string(welcome_msg_runes[1]))
+
+	// working with characters that is longer than one bytes
+	var emoji_string string = "Good morning ☀️"
+	fmt.Println("emoji_string: ", emoji_string)
+
+	// len() method on string, return the length of the bytes not the length of the string characters.
+	fmt.Println("emoji_string", len(emoji_string))
+
+	// slices can cause problem with character longer than one byte.
+	fmt.Println("slices of emoji_string: ", emoji_string[9:15]) // we have not taken all the characters of sun emoji.
+
+	fmt.Println("slices of emoji_string: ", emoji_string[9:])
+
+	// runes and bytes does not have one-to-one relationship
+	var runes_emoji_message []rune = []rune(emoji_string)
+	var bytes_emoji_message []byte = []byte(emoji_string)
+
+	fmt.Println("runes_emoji_message: ", runes_emoji_message)
+	fmt.Println("len(runes_emoji_message): ", len(runes_emoji_message))
+
+	fmt.Println("bytes_emoji_message: ", bytes_emoji_message)
+	fmt.Println("len(bytes_emoji_message): ", len(bytes_emoji_message))
+
 }
