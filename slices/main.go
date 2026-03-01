@@ -72,4 +72,24 @@ func main() {
 	fmt.Println("nyy: ", nyy)
 	fmt.Println("nzz: ", nzz)
 
+	// copy method
+	nxxx := []int{10, 20, 30}
+	nyyy := make([]int, 5)
+
+	num := copy(nyyy, nxxx)
+
+	fmt.Println("nxxx: ", nxxx)
+	fmt.Println("nyyy: ", nyyy)
+	fmt.Println("num: ", num)
+
+	// copy from array
+
+	na := [4]int{10, 20, 30, 40}
+	nb := make([]int, 5)
+
+	copy(nb, na[:]) // copy from array by converting array to slice
+
+	fmt.Println("na: ", na)
+	fmt.Println("nb: ", nb)
+
 }
