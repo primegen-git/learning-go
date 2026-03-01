@@ -11,4 +11,8 @@ func main() {
 
 	fmt.Println(x)
 	fmt.Println("nil slices:", y)
+
+	// len built-in command
+	fmt.Println("Length of x: ", len(x))
+	fmt.Println("Length of y: ", len(y))
 }
