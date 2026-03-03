@@ -27,4 +27,16 @@ func main() {
 		age:  30,
 	}
 	fmt.Println("rock_lee: ", rock_lee)
+
+	// anonymous structs
+
+	pet := struct {
+		name string
+		kind string
+	}{
+		name: "Fido",
+		kind: "dog",
+	}
+
+	fmt.Println("anonymous struct: ", pet)
 }
