@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Learning blocks and contorl statement")
+	fmt.Println("Learning blocks")
 
 	// understanding scoping
 
@@ -21,4 +21,5 @@ func main() {
 	}
 
 	fmt.Println("x: ", x)
+
 }
