@@ -39,4 +39,5 @@ func main() {
 	}
 
 	fmt.Println("anonymous struct: ", pet)
+
 }
