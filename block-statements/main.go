@@ -47,17 +47,17 @@ func main() {
 
 	// infinite loop
 
-	for {
-		fmt.Println("Infinite loop, pres Ctrl+c")
-	}
+	// for {
+	// 	fmt.Println("Infinite loop, pres Ctrl+c")
+	// }
 
 	// for - range loop
 
 	evenVals := []int{2, 4, 6, 8, 10, 12}
 
-	// for i, v := range evenVals {
-	// 	fmt.Printf("index: %d, val : %d\n", i, v)
-	// }
+	for i, v := range evenVals {
+		fmt.Printf("index: %d, val : %d\n", i, v)
+	}
 
 	// iterating over a map
 	numbers := map[int]string{
